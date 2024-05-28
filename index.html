@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cousine&family=Roboto:ital,wght@0,100;0,500;1,400;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cousine&family=Roboto:ital,wght@0,100;0,500;1,400;1,900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>home page</title>
+</head>
+<body class="back">
+		<div class="navbar">
+				<h1 class="logo">SR PAY</h1>
+				<ul class="menu">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="contact.html">contact us</a></li>
+					<li><a class="active" href="index.html">about us</a></li>
+				</ul>
+					<ul class="log">
+					<li><a href="account.html">account</a></li>
+                   	  <li><a href="signup.html">sign up</a></li>
+                </ul>
+		</div>
+		<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+           <img src="https://in.bmscdn.com/promotions/cms/creatives/1638331721816_1240x300freeaccessbannercopy.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://in.bmscdn.com/promotions/cms/creatives/1633590513692_moviemunchies_webshowcase_1240x300_7oct.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://in.bmscdn.com/promotions/cms/creatives/1637323134871_divinepunyapaaptour_webshowcase_1240x300.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://in.bmscdn.com/promotions/cms/creatives/1635399009148_inoxbannerdesktop.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end--><br>
+    <br>
+    <p style="background-color: seashell; color: black;font-size: 25px;border-radius: 20px;">
+        About SR Pay
+SR Pay is India's leading financial services company that offers full-stack payments & financial solutions to consumers, offline merchants and online platforms. The company is on a mission to bring half a billion Indians into the mainstream economy through payments, commerce, banking, investments, and financial services. One97 Communications Limited that owns the brand SR Pay is founded by Vijay Shekhar Sharma and is headquartered in Noida, Uttar Pradesh. Its investors include Softbank, Ant Financial, AGH Holdings, SAIF Partners, Berkshire Hathaway,
+T Rowe Price, and Discovery Capital.<br>
+It's wholly-owned subsidiary 'Paytm Money' has achieved the distinction of becoming India's biggest investment platform within its first year, and is now one of the largest contributors of new Systematic Investment Plans (SIPs) to the Mutual Funds industry; it has already received approvals to launch Stock Broking, Demat Services and National Pension System (NPS) services, and strives to continue to broaden the financial services and wealth management opportunities to the unbanked and underserved Indians.<br>
+Acceptance
+By registering on, accessing, browsing, downloading or using the Paytm Platform for any general purpose or for the specific purpose of availing any Paytm Service, You agree to be bound by the single-sign-on ID (hereinafter SSOID) terms and conditions set forth below as well as by the service-specific terms and conditions applicable to each Paytm Service (hereinafter collectively, the T&Cs). These T&Cs shall also include any additional or modified terms and conditions in relation to the SSOID or any additional or modified service-specific terms and conditions in relation to any Paytm Service or any future service that may be offered by Paytm on the Paytm Platform. By registering on, accessing, browsing, downloading or using (as applicable) the Paytm Platform or availing any Paytm Service or the SSOID, You automatically and immediately agree to all the T&Cs. If at any time You do not accept or agree with any of the T&Cs or do not wish to be bound by the T&Cs, You may not access, browse or use the Paytm Platform and immediately terminate Your availing the Paytm Services. Accepting or agreeing to the T&Cs will constitute a legal contract (hereinafter Agreement) between You, being at least 18 years of age and an individual user of the Paytm Platform or a customer or beneficiary of the Paytm Services, and Paytm. All services are rendered by Paytm through the Paytm Platform under the brand name “Paytm” (or any derivatives or variations thereof). Consequently, all the rights, benefits, liabilities and obligations under the T&Cs shall, as the case may be, accrue to the benefit of, or incurred by, Paytm, regarding Your use of Paytm’s digital services (which includes but may not be limited to prepaid recharge, bill payment, booking movie tickets, bus tickets, hotel rooms or flight tickets)
+    </p>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cousine&family=Roboto:ital,wght@0,100;0,500;1,400;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cousine&family=Roboto:ital,wght@0,100;0,500;1,400;1,900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>home page</title>
+</head>
+<body bgcolor="sky blue">
+		<div class="navbar">
+				<h1 class="logo">SR PAY</h1>
+				<ul class="menu">
+					<li><a class="active" href="home.html">Home</a></li>
+					<li><a href="contact.html">contact us</a></li>
+					<li><a href="index.html">about us</a></li>
+				</ul>
+					<ul class="log">
+					<li><a href="account.html">account</a></li>
+					  <li><a href="signup.html">sign up</a></li>
+                </ul>
+		</div>
+		<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+           <img src="https://th.bing.com/th/id/OIP.Yf5hvrBMLLwy27R9I1VdWgHaDE?w=346&h=145&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://i2.wp.com/www.3ghackerz.com/wp-content/uploads/2018/07/amazon-upi-offer.png?ssl=1" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.grabon.in/gograbon/images/web-images/uploads/1618560328157/phonepe-coupons.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://m.media-amazon.com/images/I/71i723QTb+L._SX3000_.jpg" alt="">
+        </div>        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+    <br>
+    <br>
+  
+    <div class="ui">
+      <form class="ui2">
+           <label class="ui1">Select an Operator :</label>
+           <select class="ui2">
+              <option selected>select</option>
+              <option >Tata Sky</option>
+              <option >Dish TV</option>
+              <option >Sun Direct</option>
+           </select><br>
+           <label class="ui1">Registered Mobile Number:</label>
+           <input class="ui3" type="text"  name="amount"><br>
+           <label class="ui1">Enter Amount:</label>
+           <input class="ui3" type="text"  name="amount"><br>
+            <label class="ui1">Enter UPI Pin :</label>
+            <input class="ui3" type="text"  name="amount"><br>
+
+           <a href="pay.html"><input class="ui4" type="button" name="pay" value="Pay"></a>
+      </form>
+    </div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+</body>
+</html>
